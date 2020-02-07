@@ -1,0 +1,10 @@
+{
+  "name": "Ma Soi",
+  "version": "1.0.0",
+  "description": "Bot dau tien trong cuoc doi",
+  "main": "index.js",
+  "author": "SOC7",
+  "dependencies": {
+    "discord.io": "https://github.com/woor/discord.io/tarball/gateway_v6"
+  }
+}
