@@ -26,9 +26,6 @@ client.on("message", async message => {
   if(message.author.bot) return;
   if(message.content.indexOf(config.prefix) !== 0) return;
 
-  // e.g. if we have the message "+say Is this the real life?" , we'll get the following:
-  // command = say
-  // args = ["Is", "this", "the", "real", "life?"]
   const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
   
@@ -40,6 +37,9 @@ client.on("message", async message => {
   }
   
   if(command === "say") {
+      // e.g. if we have the message "+say Is this the real life?" , we'll get the following:
+  // command = say
+  // args = ["Is", "this", "the", "real", "life?"]
     // makes the bot say something and delete the message. As an example, it's open to anyone to use. 
     // To get the "message" itself we join the `args` back into a string with spaces: 
     const sayMessage = args.join(" ");
